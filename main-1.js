@@ -1,7 +1,7 @@
 // 1.
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
-
+console.log('heeyy');
 function max(x,y){
     // Your answer here
     if (x>y) {
@@ -18,24 +18,28 @@ function max(x,y){
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
-
-function maxOfThree(x, y, z){
+//num1 = 3, num2 = 2, num3 = 1
+console.log(1 < 2 && 1 > 3);
+//INPUT: 3 NUMBERS
+function maxOfThree(num1, num2, num3){
     // Your answer here
-    if ((x > y)) {}
-    if ((x > z)) {}
-    {return x;}
-  }
-  function maxOfThree(x, y, z) {
-    if ((y > x)) {}
-    if ((y > z)) {}
-     {return y;}
-  }
-  function maxOfThree(x, y, z) {
-    if ((z > x)) {}
-    if ((z > y)) {
-      {return z;}
+    //compare num1 to num2 and num3
+    if(num1 > num2 && num1 > num3){
+        return num1;
     }
-  }
+    //compare num2 to num3
+    if (num2 > num3 ) {
+      return num2;
+    } else {
+      return num3;
+    }
+    //else return num3
+
+    //OUTPUT: 1 NUMBER
+    // return 1 number
+}
+console.assert(maxOfThree(3, 2, 1) === 3);
+console.assert(maxOfThree(2, 4, 1) === 4);
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -76,27 +80,37 @@ function avg(x, y, z) {
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
- function getLength(){
-   var str1 = "1";
-   var str2 = "length"
-   return str2
+//INPUT: 1 STRING
+ function getLength(str){
 
+   console.log(str);
+  //  OUTPUT: NUMBER
+console.log(str.length);
+  return str.length;
 }
 
+
+console.assert(getLength('you') === 3);
+console.assert(getLength('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.') === 446)
+getLength('Candace')
+getLength('bubba')
 // 7.
 // Write a function called `greaterThan` that takes two parameters
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
 function greaterThan(x,y){
-    if (x> y) {
-      return "true";
+    if (x > y) {
+      return true;
     } else {
-      "false";
+      return false;
     }
 
 }
 
+function getAllWordsThatEqualThree(){
+  const wordsThatEqualThree = [];
+}
 
 // 8.
 // Write a function called `greet` that takes a
